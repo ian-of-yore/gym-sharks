@@ -16,6 +16,10 @@
     height: 35px;
 }
 
+.btn-add-to-list:hover {
+    background-color: orange;
+}
+
 .exercise-info {
     padding: 5px;
     height: 525px;
