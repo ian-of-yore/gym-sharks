@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Akatsuki from './components/Akatsuki/Akatsuki';
 
 function App() {
 
   return (
-    console.log("lmao")
+    <div>
+      <Akatsuki></Akatsuki>
+    </div>
   );
 }
 

@@ -1,0 +1,16 @@
+.exercise-container {
+    background-color: aqua;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.header {
+    display: flex;
+}
+
+.header img {
+    width: 80px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
