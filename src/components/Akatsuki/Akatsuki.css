@@ -2,3 +2,16 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+
+.header-and-exercises {
+    margin-top: 80px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 15px;
+}
+
+.exercise-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}

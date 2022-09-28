@@ -1,20 +1,19 @@
 import React from 'react';
-import logo from '../../images/logo.png'
-
 import './Exercise.css'
 
-const Exercise = () => {
+const Exercise = (props) => {
+    // console.log(props)
     return (
-        <div className='exercise-container'>
-            <div className='header'>
-                <div>
-                    <img src={logo} alt="" />
-                </div>
-                <div>
-                    <h1>Akatsuki Fitness Center</h1>
-                </div>
+        <div className='exercise'>
+            <div className='exercise-info'>
+                <img src={props.img} alt="" />
+                <h4>Name: {props.name}</h4>
+                <p>Description: {props.description}</p>
+                <p>Time: {props.time} Sec</p>
             </div>
-            <h3>Be the Rougue Ninja, You've always meant to be!</h3>
+            <div>
+                <button className='btn-add-to-list'>Add to List</button>
+            </div>
         </div>
     );
 };

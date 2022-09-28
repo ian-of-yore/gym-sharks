@@ -1,16 +1,16 @@
-.exercise-container {
-    background-color: aqua;
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+.exercise {
+    border: 1px solid black;
 }
 
-.header {
-    display: flex;
+.exercise img {
+    width: 100%;
 }
 
-.header img {
-    width: 80px;
-    border-radius: 10px;
-    margin-right: 10px;
+.btn-add-to-list {
+    width: 100%;
+    background-color: rgb(234, 181, 84);
+}
+
+.exercise-info {
+    padding: 5px;
 }
