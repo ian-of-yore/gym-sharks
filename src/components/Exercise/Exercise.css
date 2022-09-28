@@ -1,6 +1,6 @@
 .exercise {
     border: 1px solid black;
-    height: 570px;
+    height: 575px;
 }
 
 .exercise img {
@@ -13,7 +13,7 @@
 .btn-add-to-list {
     width: 100%;
     background-color: rgb(234, 181, 84);
-    height: 35px;
+    height: 40px;
 }
 
 .btn-add-to-list:hover {

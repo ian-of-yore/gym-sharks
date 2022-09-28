@@ -1,9 +1,8 @@
 .user-container {
     margin-top: 0;
-    height: 700px;
+    height: 678px;
     position: sticky;
     top: 18px;
-    border: 1px solid black;
     margin-right: 5px;
 }
 
@@ -60,6 +59,7 @@
 .break-info {
     display: flex;
     justify-content: center;
+
 }
 
 .btn-break {
@@ -72,4 +72,25 @@
 
 .btn-break:hover {
     background-color: cornflowerblue;
+}
+
+.exercise-details h2 {
+    margin-bottom: 10px;
+}
+
+.exercise-details h3 {
+    padding-left: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.activity-completed {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(88, 124, 231);
+    font-size: large;
+    color: white;
+    font-weight: 400;
+    border-radius: 20px;
 }

@@ -46,6 +46,12 @@ const User = () => {
                 <button className='btn-break'>50s</button>
 
             </div>
+            <div className='exercise-details'>
+                <h2>Exercise Details</h2>
+                <h3>Exercise Time:</h3>
+                <h3>Break Time: </h3>
+            </div>
+            <button className='activity-completed'>Activity Completed</button>
         </div>
     );
 };
