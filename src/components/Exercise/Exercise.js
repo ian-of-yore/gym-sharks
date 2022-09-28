@@ -7,9 +7,9 @@ const Exercise = (props) => {
         <div className='exercise'>
             <div className='exercise-info'>
                 <img src={props.img} alt="" />
-                <h4>Name: {props.name}</h4>
-                <p>Description: {props.description}</p>
-                <p>Time: {props.time} Sec</p>
+                <h2>{props.name}</h2>
+                <p><span className='exercise-info-title'>Description:</span> {props.description}</p>
+                <p><span className='exercise-info-title'>Time: </span>{props.time} Sec</p>
             </div>
             <div>
                 <button className='btn-add-to-list'>Add to List</button>
