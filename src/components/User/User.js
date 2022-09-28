@@ -36,6 +36,14 @@ const User = () => {
                     </div>
                         <h3>Age</h3></div>
                 </div>
+            </div>
+            <h2>Add A Break</h2>
+            <div className='break-info'>
+                <button className='btn-break'>10s</button>
+                <button className='btn-break'>20s</button>
+                <button className='btn-break'>30s</button>
+                <button className='btn-break'>40s</button>
+                <button className='btn-break'>50s</button>
 
             </div>
         </div>
