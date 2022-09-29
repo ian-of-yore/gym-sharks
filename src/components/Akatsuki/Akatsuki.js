@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import Blog from '../Blog/Blog';
 import Exercise from '../Exercise/Exercise';
 import Header from '../Header/Header';
 import User from '../User/User';
@@ -26,22 +27,25 @@ const Akatsuki = () => {
     }
 
     return (
-        <div className='akatsuki'>
-            <div className='header-and-exercises'>
-                <Header></Header>
-                <div className='exercise-container'>
-                    {
-                        exercises.map(exercise => <Exercise
-                            key={exercise.id}
-                            exercise={exercise}
-                            handleExercise={handleExercise}
+        <div>
+            <div className='akatsuki'>
+                <div className='header-and-exercises'>
+                    <Header></Header>
+                    <div className='exercise-container'>
+                        {
+                            exercises.map(exercise => <Exercise
+                                key={exercise.id}
+                                exercise={exercise}
+                                handleExercise={handleExercise}
 
-                        ></Exercise>)
-                    }
+                            ></Exercise>)
+                        }
+                    </div>
+                    <Blog></Blog>
                 </div>
-            </div>
-            <div className='user'>
-                <User exerciseTime={exerciseTime}></User>
+                <div className='user'>
+                    <User exerciseTime={exerciseTime}></User>
+                </div>
             </div>
         </div>
     );
