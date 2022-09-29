@@ -15,7 +15,11 @@ const Akatsuki = () => {
             .then(data => setExercises(data))
     }, [])
 
-    console.log(exercises)
+    // console.log(exercises)
+
+    const handleExercise = (exercise) => {
+        console.log(exercise);
+    }
 
     return (
         <div className='akatsuki'>
@@ -25,10 +29,8 @@ const Akatsuki = () => {
                     {
                         exercises.map(exercise => <Exercise
                             key={exercise.id}
-                            name={exercise.name}
-                            img = {exercise.img}
-                            time={exercise.time}
-                            description={exercise.description}
+                            exercise={exercise}
+                            handleExercise={handleExercise}
 
                         ></Exercise>)
                     }
