@@ -1,5 +1,6 @@
 import React from 'react';
 import user from '../../images/user.jpg'
+import Toaster from '../Toaster/Toaster';
 import './User.css'
 
 const User = (props) => {
@@ -7,6 +8,10 @@ const User = (props) => {
     let totalExerciseTime = 0;
     for (let time of props.exerciseTime) {
         totalExerciseTime = totalExerciseTime + time;
+    }
+
+    const handleBreakTime = () => {
+        console.log("Break time button e click porce")
     }
 
     return (
@@ -45,11 +50,11 @@ const User = (props) => {
             </div>
             <h2>Add A Break</h2>
             <div className='break-info'>
-                <button className='btn-break'>10s</button>
-                <button className='btn-break'>20s</button>
-                <button className='btn-break'>30s</button>
-                <button className='btn-break'>40s</button>
-                <button className='btn-break'>50s</button>
+                <button onClick={handleBreakTime} className='btn-break'>10s</button>
+                <button onClick={handleBreakTime} className='btn-break'>20s</button>
+                <button onClick={handleBreakTime} className='btn-break'>30s</button>
+                <button onClick={handleBreakTime} className='btn-break'>40s</button>
+                <button onClick={handleBreakTime} className='btn-break'>50s</button>
 
             </div>
             <div className='exercise-details'>
@@ -57,7 +62,9 @@ const User = (props) => {
                 <h3>Exercise Time: {totalExerciseTime} Sec</h3>
                 <h3>Break Time: </h3>
             </div>
-            <button className='activity-completed'>Activity Completed</button>
+            <div>
+                <Toaster></Toaster>
+            </div>
         </div>
     );
 };

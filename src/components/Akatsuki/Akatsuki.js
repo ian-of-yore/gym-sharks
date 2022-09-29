@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Exercise from '../Exercise/Exercise';
 import Header from '../Header/Header';
+// import Toaster from '../Toaster/Toaster';
 import User from '../User/User';
 import './Akatsuki.css'
 
@@ -42,6 +43,7 @@ const Akatsuki = () => {
             </div>
             <div>
                 <User exerciseTime={exerciseTime}></User>
+                {/* <Toaster></Toaster> */}
             </div>
         </div>
     );

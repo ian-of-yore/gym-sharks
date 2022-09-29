@@ -1,0 +1,10 @@
+.activity-completed {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(88, 124, 231);
+    font-size: large;
+    color: white;
+    font-weight: 400;
+    border-radius: 20px;
+}
