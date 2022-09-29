@@ -2,7 +2,13 @@ import React from 'react';
 import user from '../../images/user.jpg'
 import './User.css'
 
-const User = () => {
+const User = (props) => {
+    // console.log(props.exerciseTime)
+    let totalExerciseTime = 0;
+    for (let time of props.exerciseTime) {
+        totalExerciseTime = totalExerciseTime + time;
+    }
+
     return (
         <div className='user-container'>
             <div className='user-profile'>
@@ -48,7 +54,7 @@ const User = () => {
             </div>
             <div className='exercise-details'>
                 <h2>Exercise Details</h2>
-                <h3>Exercise Time:</h3>
+                <h3>Exercise Time: {totalExerciseTime} Sec</h3>
                 <h3>Break Time: </h3>
             </div>
             <button className='activity-completed'>Activity Completed</button>

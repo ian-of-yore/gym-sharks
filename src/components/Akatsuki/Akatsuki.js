@@ -8,6 +8,7 @@ import './Akatsuki.css'
 
 const Akatsuki = () => {
     const [exercises, setExercises] = useState([]);
+    const [exerciseTime, setExerciseTime] = useState([]);
 
     useEffect(() => {
         fetch("exerciseData.json")
@@ -18,7 +19,10 @@ const Akatsuki = () => {
     // console.log(exercises)
 
     const handleExercise = (exercise) => {
-        console.log(exercise);
+        // console.log(exercise);
+        let exerciseTimeArray = [];
+        exerciseTimeArray = [...exerciseTime, exercise];
+        setExerciseTime(exerciseTimeArray);
     }
 
     return (
@@ -37,7 +41,7 @@ const Akatsuki = () => {
                 </div>
             </div>
             <div>
-                <User></User>
+                <User exerciseTime={exerciseTime}></User>
             </div>
         </div>
     );
