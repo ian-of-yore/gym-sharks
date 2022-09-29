@@ -16,3 +16,26 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+
+@media (max-width: 576px) {
+
+    .akatsuki {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        margin-bottom: 0;
+        height: 500px;
+    }
+
+    .exercise-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
